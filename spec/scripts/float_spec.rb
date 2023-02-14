@@ -14,8 +14,7 @@ describe "find_hypotenuse.rb" do
     output = with_captured_stdout { require_relative('../../find_hypotenuse')} 
     output = "empty" if output.empty? 
     expect(output.match?(/5.3/i)).to be(true),
-      "Expected find_hypotenuse.rb output to be '5.3\n', but was #{output}."
-    
+      "Expected float_find_hypotenuse.rb output to be:\n5.3\nbut was:\n#{output}"    
   end
 end
 
@@ -36,7 +35,7 @@ describe "round.rb" do
     output = with_captured_stdout { require_relative('../../round')} 
     output = "empty" if output.empty? 
     expect(output.match?(/3.333\n/i)).to be(true),
-      "Expected round.rb output to be '3.333\n', but was #{output}."
+      "Expected float_round.rb output to be\n3.333\nbut was\n#{output}"
 
   end
 end
